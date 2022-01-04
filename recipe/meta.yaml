@@ -1,4 +1,4 @@
-{% set version = '1.9.0' %}
+{% set version = "1.10.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/upsetjs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/upsetjs/upsetjs_{{ version }}.tar.gz
-  sha256: 2fcea0d0fcaaf89c6d2cb2a9be03f63f5ea55eb00c58b43ce01e04240418de77
+  sha256: 11cea62a0e5064d0543e132cf67b0c2cd87086427fffdf10a687f6777268e131
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -41,12 +41,10 @@ test:
 about:
   home: https://github.com/upsetjs/upsetjs_r/
   license: AGPL-3.0-only
-  summary: '''UpSet.js'' is a re-implementation of ''UpSetR'' to create interactive set visualizations
-    for more than three sets. This is a ''htmlwidget'' wrapper around the ''JavaScript''
-    library ''UpSet.js''.'
+  summary: "'UpSet.js' is a re-implementation of 'UpSetR' to create interactive set visualizations for more than three sets. This is a 'htmlwidget' wrapper around the 'JavaScript' library 'UpSet.js'."
   license_family: AGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
     - LICENSE
 
 extra:
