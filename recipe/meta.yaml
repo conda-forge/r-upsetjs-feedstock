@@ -1,4 +1,4 @@
-{% set version = "1.10.10" %}
+{% set version = "1.10.11" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/upsetjs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/upsetjs/upsetjs_{{ version }}.tar.gz
-  sha256: 11cea62a0e5064d0543e132cf67b0c2cd87086427fffdf10a687f6777268e131
+  sha256: ba284ebc7cdd9bc80fadaa5dbf7cb6b92a872cfbd3d2f70e57a185a23a04ad72
 
 build:
   merge_build_host: true  # [win]
