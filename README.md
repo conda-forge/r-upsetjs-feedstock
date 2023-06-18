@@ -1,11 +1,11 @@
-About r-upsetjs
-===============
+About r-upsetjs-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-upsetjs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/upsetjs/upsetjs_r/
 
 Package license: AGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-upsetjs-feedstock/blob/main/LICENSE.txt)
 
 Summary: 'UpSet.js' is a re-implementation of 'UpSetR' to create interactive set visualizations for more than three sets. This is a 'htmlwidget' wrapper around the 'JavaScript' library 'UpSet.js'.
 
